@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClint;
+using System.Data.SqlClient;
 
 
 namespace loggin
@@ -21,6 +21,15 @@ namespace loggin
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                SqlConnection Con = new SqlConnection(NAME = N'loggin', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL14.SQLEXPRESS01\MSSQL\DATA\loggin.mdf', SIZE = 8192KB, MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
 
         }
     }
