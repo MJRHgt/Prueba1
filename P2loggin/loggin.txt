@@ -1,0 +1,8 @@
+----------Prueba, nunca habia hecho la coneccion en c#----------------------
+CREATE DATABASE loggin
+CREATE TABLE usuario
+(
+	idUsser INT IDENTITY PRIMARY KEY,
+	usuario NVARCHAR(12) NOT NULL,
+	contra NVARCHAR(15)
+)
